@@ -27,9 +27,13 @@ app.use(
 app.use(passport.initialize()); // intializing passport for using it for authentication.
 app.use(passport.session()); // using passport for session managment.
 
-mongoose.connect("mongodb://localhost:27017/userDB", {
-  useNewUrlParser: true,
-});
+mongoose.connect(
+  process.env.Data_Base,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology:true,
+  }
+);
 mongoose.set("useCreateIndex", true); // to dissable deprecated warning.
 
 const userSchema = new mongoose.Schema({
