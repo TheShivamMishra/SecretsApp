@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Shivam Kumar Mishran",
   "license": "ISC",
    "engines": {
-    "node": "12.8.2"
+    "node": "12.18.2"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
