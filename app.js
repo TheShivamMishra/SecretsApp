@@ -172,6 +172,6 @@ app.get("/logout", function (req, res) {
   res.redirect("/");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Server is Running on Port: 3000");
 });
